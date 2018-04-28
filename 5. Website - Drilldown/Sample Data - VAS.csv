@@ -1,0 +1,135 @@
+State,District,Type,LocNum,Location,Senior Manager,Vehicle,Identification #,Date,On Time Status,Arrival Time,In/Out,Departing From,Destination
+MA,Bostonian,Station,16,ORHA,Reginald Cruz,Airplane,1QAZ,3/20/2018,On Time,0:15,inbound,BEDA,ORHA
+MA,Bostonian,Station,16,ORHA,Reginald Cruz,Airplane,2WSX,3/20/2018,Late by 15 minutes,0:20,outbound,ORHA,BEDA
+MA,Bostonian,Station,16,ORHA,Reginald Cruz,Airplane,3EDC,3/20/2018,Early by 20 minutes,0:25,outbound,ORHA,BEDA
+MA,Bostonian,Station,16,ORHA,Reginald Cruz,Truck,4RFV,3/20/2018,On Time,0:30,inbound,BEDA,ORHA
+MA,Bostonian,Station,16,ORHA,Reginald Cruz,Truck,5TGB,3/20/2018,Late by 24 minutes,0:35,outbound,ORHA,NZWA
+MA,Bostonian,Station,16,ORHA,Reginald Cruz,Truck,6YHN,3/20/2018,Early by 32 minutes,0:40,outbound,ORHA,NZWA
+MA,Bostonian,Station,16,ORHA,Reginald Cruz,Airplane,7UJM,3/20/2018,Late by 6 minutes,0:45,inbound,NZWA,ORHA
+MA,Bostonian,Station,16,ORHA,Reginald Cruz,Truck,8IKI,3/20/2018,On Time,0:50,outbound,ORHA,NZWA
+MA,Bostonian,Station,16,ORHA,Reginald Cruz,Airplane,9OLP,3/20/2018,On Time,0:55,inbound,PSMA,ORHA
+MA,Bostonian,Station,16,ORHA,Reginald Cruz,Truck,1AQ1,3/20/2018,Late by 12 minutes,1:00,outbound,ORHA,PSMA
+MA,Bostonian,Station,16,ORHA,Reginald Cruz,Airplane,2WS2,3/26/2018,On Time,13:00,outbound,ORHA,PSMA
+MA,Bostonian,Station,16,ORHA,Reginald Cruz,Truck,3ED3,3/26/2018,Late by 6 minutes,14:00,inbound,WTCA,ORHA
+MA,Bostonian,Station,16,ORHA,Reginald Cruz,Airplane,4RF4,3/26/2018,Early by 27 minutes,15:00,outbound,ORHA,WTCA
+MA,Bostonian,Station,16,ORHA,Reginald Cruz,Truck,5TG5,3/26/2018,On Time,16:00,inbound,WTCA,ORHA
+MA,Bostonian,Station,16,ORHA,Reginald Cruz,Truck,6YH6,3/26/2018,Late by 14 minutes,17:00,inbound,WTCA,ORHA
+MA,Bostonian,Station,21,BEDA,Molly Fisher,Truck,7UJ7,3/20/2018,Early by 8 minutes,0:15,inbound,LGAA,BEDA
+MA,Bostonian,Station,23,NZWA,Lillie Barker,Airplane,8IK8,3/20/2018,Late by 45 minutes,0:15,inbound,LGAA,NZWA
+MA,Bostonian,Station,26,BVYA,Ian Barton,Airplane,9OL9,3/20/2018,On Time,0:15,inbound,LGAA,BVYA
+RI,Bostonian,Station,29,PVDA,Kelly Larson,Airplane,0PP0,3/20/2018,On Time,0:15,outbound,PVDA,FOKA
+NH,Bostonian,Station,38,PSMA,Aubrey Cook,Airplane,1QA2,3/20/2018,Late by 52 minutes,0:15,inbound,FOKA,PSMA
+ME,Bostonian,Station,44,PSMA,Sheila Fleming,Airplane,2WS3,3/20/2018,On Time,0:15,inbound,FOKA,PSMA
+ME,Bostonian,Station,221,AUGA,Jody Williamson,Airplane,3ED4,3/20/2018,Late by 15 minutes,0:15,outbound,AUGA,GAIA
+MA,Bostonian,Station,238,OWDA,Luke Richardson,Airplane,4RF5,3/20/2018,Early by 20 minutes,0:15,inbound,GAIA,OWDA
+MA,Bostonian,Station,269,CEFA,Clayton Curtis,Truck,5TG6,3/20/2018,On Time,0:15,inbound,GAIA,CEFA
+NY,Big Apple,Station,100,NYCA,Andre Hunter,Truck,6YH7,3/20/2018,Late by 24 minutes,0:15,outbound,NYCA,DGNA
+NY,Big Apple,Station,101,JRBA,Ricardo French,Airplane,7UJ8,3/20/2018,Early by 32 minutes,0:20,inbound,DGNA,JRBA
+NY,Big Apple,Station,102,WTCA,Pearl Howell,Truck,8IK9,3/20/2018,Late by 6 minutes,0:25,inbound,DGNA,WTCA
+NY,Big Apple,Station,106,HPNA,Laverne Morgan,Truck,9OL0,3/20/2018,On Time,0:30,outbound,HPNA,DGNA
+NY,Big Apple,Station,111,LGAA,Jeannie Owens,Airplane,0PJM,3/20/2018,On Time,0:35,inbound,CHOA,LGAA
+NY,Big Apple,Station,243,FIDA,June Benson,Airplane,Q1W2,3/20/2018,Late by 12 minutes,0:40,outbound,FIDA,CHOA
+NY,Big Apple,Station,311,JRAA,Kerry Ballard,Airplane,W2E3,3/20/2018,On Time,0:45,inbound,CHOA,JRAA
+NY,Big Apple,Station,316,TSSA,Caroline Long,Airplane,E3R4,3/20/2018,Late by 6 minutes,0:50,inbound,WTCA,TSSA
+NY,Big Apple,Station,372,FBTA,Rodney Norton,Truck,R4T5,3/20/2018,Early by 27 minutes,0:55,outbound,FBTA,WTCA
+NY,Big Apple,Station,391,FOKA,May Douglas,Truck,T5Y6,3/20/2018,On Time,1:00,inbound,WTCA,FOKA
+MD,Capital,Station,208,GAIA,Leona Watson,Truck,Y6U7,3/20/2018,Late by 14 minutes,1:05,outbound,GAIA,WTCA
+MD,Capital,Station,217,HGRA,Mae Ortega,Airplane,U7I8,3/20/2018,Early by 8 minutes,1:10,inbound,PHFA,HGRA
+VA,Capital,Station,224,DGNA,Jermaine Jones,Airplane,I8O9,3/20/2018,Late by 45 minutes,1:15,inbound,PHFA,DGNA
+VA,Capital,Station,229,CHOA,Misty Cannon,Truck,O9P0,3/20/2018,On Time,1:20,outbound,CHOA,PHFA
+VA,Capital,Station,235,ORFA,Matt Holloway,Truck,P0Q1,3/20/2018,On Time,1:25,inbound,PHFA,ORFA
+DC,Capital,Station,246,JPNA,Theodore Warner,Airplane,ZX0C,3/20/2018,Late by 52 minutes,1:30,inbound,ZSYA,JPNA
+NC,Capital,Station,263,MQIA,Mattie Christensen,Truck,XC9V,3/20/2018,On Time,1:35,outbound,MQIA,ZSYA
+VA,Capital,Station,266,PHFA,Ed Townsend,Truck,CV8B,3/20/2018,Late by 15 minutes,1:40,inbound,ZSYA,PHFA
+VA,Capital,Station,271,PTBA,Melinda Martin,Airplane,VB7N,3/20/2018,Early by 20 minutes,1:45,outbound,PTBA,ZSYA
+VA,Capital,Station,348,BCBA,Leroy Thompson,Truck,BN6M,3/20/2018,On Time,1:50,inbound,RKSA,BCBA
+AZ,Canyon,Station,127,ZSYA,Melvin Carpenter,Truck,AS5D,3/20/2018,Late by 24 minutes,1:55,inbound,RKSA,ZSYA
+UT,Canyon,Station,297,BTFA,Shelly Garner,Airplane,SD4F,3/20/2018,Early by 32 minutes,2:00,outbound,BTFA,RKSA
+AZ,Canyon,Station,397,MSCA,Kevin Stevenson,Truck,DF3G,3/20/2018,Late by 6 minutes,2:05,inbound,RKSA,MSCA
+UT,Canyon,Station,499,SGUA,Randall Clark,Truck,FG2H,3/20/2018,On Time,2:10,inbound,RKSA,SGUA
+UT,Canyon,Station,574,OGDA,Hazel Tyler,Airplane,GH1J,3/20/2018,On Time,2:15,outbound,OGDA,BVUA
+NV,Canyon,Station,663,VGTA,Laurence Harper,Truck,HJ2K,3/20/2018,Late by 12 minutes,2:20,inbound,BVUA,VGTA
+WY,Canyon,Station,793,JACA,Renee Cohen,Truck,JK3L,3/20/2018,On Time,2:25,outbound,JACA,BVUA
+TX,Canyon,Station,799,ELPA,Gloria Medina,Airplane,QW4E,3/20/2018,Late by 6 minutes,2:30,inbound,BVUA,ELPA
+AZ,Canyon,Station,812,LHUA,Adrian Day,Truck,WE5R,3/20/2018,Early by 27 minutes,2:35,inbound,BVUA,LHUA
+WY,Canyon,Station,830,RKSA,Kelley Gross,Airplane,ER6T,3/20/2018,On Time,2:40,outbound,RKSA,SEAA
+CO,Mountain,Station,457,BJCA,Leslie Watkins,Truck,RT7Y,4/20/2018,Late by 14 minutes,2:45,inbound,SEAA,BJCA
+CO,Mountain,Station,459,WHHA,Erma Lowe,Airplane,TY8U,4/20/2018,Early by 8 minutes,2:50,inbound,SEAA,WHHA
+WY,Mountain,Station,493,RIWA,Stacy Adkins,Truck,YU9I,4/20/2018,Late by 45 minutes,2:55,outbound,RIWA,HIOA
+CO,Mountain,Station,497,MTJA,Isaac Harris,Airplane,UI0O,4/20/2018,On Time,3:00,inbound,HIOA,MTJA
+CO,Mountain,Station,498,SBSA,Hubert Lambert,Truck,M1N2,4/20/2018,On Time,3:05,outbound,SBSA,BKFA
+WY,Mountain,Station,500,GCCA,Delores Knight,Airplane,B2V3,4/20/2018,Late by 52 minutes,3:10,inbound,SBSA,GCCA
+WY,Mountain,Station,505,SHRA,Cary Goodman,Airplane,V3C4,4/20/2018,On Time,3:15,inbound,SBSA,SHRA
+CO,Mountain,Station,795,BKFA,Jorge Hansen,Airplane,X4Z5,4/20/2018,Late by 15 minutes,3:20,outbound,BKFA,SBSA
+CO,Mountain,Station,802,DENA,Jan Buchanan,Truck,11QW,4/20/2018,Early by 20 minutes,12:45,inbound,HLGA,DENA
+CO,Mountain,Station,805,FTCA,Terence Moreno,Truck,12WE,4/20/2018,On Time,13:00,inbound,HLGA,FTCA
+WA,Pacific Northwest,Station,225,EATA,Tammy Davis,Truck,13ER,4/20/2018,Late by 24 minutes,13:15,outbound,EATA,HLGA
+WA,Pacific Northwest,Station,400,BVUA,Percy Sharp,Truck,14RT,4/20/2018,Early by 32 minutes,13:30,inbound,HLGA,BVUA
+WA,Pacific Northwest,Station,588,SEAA,Diane McCarthy,Truck,15TY,4/20/2018,Late by 6 minutes,13:45,outbound,SEAA,HLGA
+OR,Pacific Northwest,Station,715,LMTA,Juanita Wright,Truck,16YU,4/20/2018,On Time,14:00,inbound,MGWA,LMTA
+WA,Pacific Northwest,Station,728,PAEA,Isabel Mann,Truck,17UI,4/20/2018,On Time,14:15,inbound,MGWA,PAEA
+OR,Pacific Northwest,Station,817,MFRA,Erin Bell,Truck,18IO,4/20/2018,Late by 12 minutes,14:30,outbound,MFRA,MGWA
+WA,Pacific Northwest,Station,822,CLMA,Jill Bradley,Truck,19HG,4/20/2018,On Time,14:45,inbound,MGWA,CLMA
+OR,Pacific Northwest,Station,825,HIOA,Terrence Pratt,Truck,20JH,4/20/2018,Late by 6 minutes,15:00,inbound,MGWA,HIOA
+OR,Pacific Northwest,Station,832,PDTA,Pauline Dean,Truck,21FD,4/20/2018,Early by 27 minutes,15:15,outbound,PDTA,CLUA
+ID,Pacific Northwest,Station,837,BOIA,Lisa Munoz,Truck,22DH,4/20/2018,On Time,15:30,inbound,CLUA,BOIA
+OH,Three Rivers,Station,50,LNNA,Gertrude Lawson,Truck,23CN,4/20/2018,Late by 14 minutes,15:45,outbound,LNNA,CLUA
+PA,Three Rivers,Station,152,PITA,Bessie Owen,Airplane,24CS,4/20/2018,Early by 8 minutes,16:00,inbound,CLUA,PITA
+PA,Three Rivers,Station,154,AGCA,Amy Miller,Truck,25LO,4/20/2018,Late by 45 minutes,16:15,inbound,CLUA,AGCA
+PA,Three Rivers,Station,156,LBEA,Dallas Jenkins,Airplane,26LY,4/20/2018,On Time,16:30,outbound,LBEA,FAYA
+PA,Three Rivers,Station,165,ERIA,Janice White,Truck,27FD,4/20/2018,On Time,16:45,inbound,FAYA,ERIA
+PA,Three Rivers,Station,166,AOOA,Marie Rose,Airplane,28GE,4/20/2018,Late by 52 minutes,17:00,inbound,FAYA,AOOA
+PA,Three Rivers,Station,169,JSTA,Lora Lee,Truck,29HR,4/20/2018,On Time,17:15,outbound,JSTA,FAYA
+WV,Three Rivers,Station,260,HLGA,Derek Garcia,Truck,30JT,4/20/2018,Late by 15 minutes,17:30,inbound,FAYA,HLGA
+WV,Three Rivers,Station,265,MGWA,Victor Wolfe,Truck,31KY,4/20/2018,Early by 20 minutes,17:45,outbound,MGWA,GSPA
+PA,Three Rivers,Station,281,MEJA,Jon Santiago,Truck,32LI,4/20/2018,On Time,18:00,inbound,GSPA,MEJA
+MI,Great Lakes,Station,37,PLNA,Veronica Holmes,Truck,33VF,4/20/2018,Late by 24 minutes,18:15,inbound,GSPA,PLNA
+IN,Great Lakes,Station,279,CLUA,Deanna Byrd,Truck,34DW,4/20/2018,Early by 32 minutes,18:30,outbound,CLUA,GSPA
+OH,Great Lakes,Station,436,TOLA,Cindy Payne,Truck,35SC,4/20/2018,Late by 6 minutes,18:45,inbound,GSPA,TOLA
+IN,Great Lakes,Station,460,MZZA,Cheryl Mitchell,Truck,65HN,4/20/2018,On Time,19:00,inbound,ANDA,MZZA
+IN,Great Lakes,Station,468,FWAA,Sonja Patrick,Airplane,67KL,4/20/2018,On Time,19:15,outbound,FWAA,ANDA
+IN,Great Lakes,Station,469,OKKA,Janet Harmon,Truck,68TG,4/20/2018,Late by 12 minutes,19:30,inbound,ANDA,OKKA
+IN,Great Lakes,Station,473,MIEA,Flora Collins,Airplane,69OL,4/20/2018,On Time,19:45,outbound,MIEA,ANDA
+IN,Great Lakes,Station,474,BMGA,Mable Wells,Truck,70SJ,4/20/2018,Late by 6 minutes,20:00,inbound,ANDA,BMGA
+IN,Great Lakes,Station,478,HUFA,Kellie Ray,Airplane,71FJ,4/20/2018,Early by 27 minutes,20:15,inbound,GSPA,HUFA
+IN,Great Lakes,Station,479,LAFA,Inez May,Truck,72GK,4/20/2018,On Time,20:30,outbound,LAFA,GSPA
+VA,Piedmont,Station,240,ROAA,Sylvester Burgess,Airplane,73JL,4/21/2018,Late by 14 minutes,20:45,inbound,GSPA,ROAA
+VA,Piedmont,Station,245,LYHA,Elaine Parker,Truck,74XC,4/22/2018,Early by 8 minutes,21:00,inbound,GSPA,LYHA
+WV,Piedmont,Station,253,CRWA,Cameron Hart,Airplane,75AH,4/23/2018,Late by 45 minutes,21:15,outbound,CRWA,MGEA
+WV,Piedmont,Station,261,PKBA,Howard Hines,Truck,76MO,4/24/2018,On Time,21:30,inbound,MGEA,PKBA
+NC,Piedmont,Station,276,RDUA,Don Harrington,Airplane,77SV,4/25/2018,On Time,21:45,outbound,RDUA,MGEA
+NC,Piedmont,Station,278,RWIA,Corey Fuller,Truck,78YN,4/26/2018,Late by 52 minutes,22:00,inbound,MGEA,RWIA
+NC,Piedmont,Station,280,HKYA,Chelsea Love,Airplane,79OL,4/27/2018,On Time,22:15,inbound,MGEA,HKYA
+NC,Piedmont,Station,282,QWGA,Francis Russell,Truck,80KW,4/28/2018,Late by 15 minutes,22:30,outbound,QWGA,OLVA
+NC,Piedmont,Station,283,FAYA,Jerry Becker,Airplane,81RL,4/29/2018,Early by 20 minutes,22:45,inbound,OLVA,FAYA
+NC,Piedmont,Station,355,MRNA,Lee Fitzgerald,Truck,82IL,4/30/2018,On Time,23:00,inbound,OLVA,MRNA
+GA,Southeast,Station,91,RMGA,Jordan Casey,Truck,83SK,5/1/2018,Late by 24 minutes,23:15,outbound,RMGA,OLVA
+NC,Southeast,Station,288,AVLA,Ralph Webster,Truck,84MG,5/2/2018,Early by 32 minutes,23:30,inbound,OLVA,AVLA
+SC,Southeast,Station,296,GSPA,Kathleen Silva,Truck,85GW,5/3/2018,Late by 6 minutes,23:45,outbound,GSPA,OLVA
+SC,Southeast,Station,298,ANDA,Crystal Norris,Truck,86AA,5/4/2018,On Time,23:40,inbound,AVLA,ANDA
+GA,Southeast,Station,300,FTYA,Pat Ford,Truck,87JY,5/5/2018,On Time,23:35,inbound,AVLA,FTYA
+GA,Southeast,Station,302,MGEA,Douglas Nelson,Truck,88MR,5/6/2018,Late by 12 minutes,23:30,outbound,MGEA,AVLA
+GA,Southeast,Station,306,AHNA,Pete Griffin,Truck,89UK,5/7/2018,On Time,23:25,inbound,AVLA,AHNA
+GA,Southeast,Station,308,NCQA,Roosevelt Wade,Truck,90AK,5/8/2018,Late by 6 minutes,23:20,inbound,AVLA,NCQA
+GA,Southeast,Station,309,AGSA,Daisy Blake,Airplane,91SL,5/9/2018,Early by 27 minutes,23:15,outbound,AGSA,TUPA
+GA,Southeast,Station,312,MCNA,Homer Chapman,Airplane,92TL,5/10/2018,On Time,23:10,inbound,TUPA,MCNA
+FL,South Florida,Station,2,BCTA,Jessie Sims,Airplane,938L,4/20/2018,Late by 14 minutes,23:05,outbound,BCTA,TUPA
+FL,South Florida,Station,10,TMBA,Dawn Norman,Airplane,94RG,4/21/2018,Early by 8 minutes,23:00,inbound,TUPA,TMBA
+FL,South Florida,Station,14,HSTA,Maria Bell,Airplane,95JK,4/22/2018,Late by 45 minutes,22:55,inbound,TUPA,HSTA
+FL,South Florida,Station,334,PBIA,Rita Bowers,Airplane,96AS,4/23/2018,On Time,22:50,outbound,PBIA,TUPA
+FL,South Florida,Station,335,SRQA,Bert Hubbard,Airplane,97SD,4/24/2018,On Time,22:45,inbound,RDUA,SRQA
+FL,South Florida,Station,337,PIEA,Gladys Ryan,Truck,98DF,4/25/2018,Late by 52 minutes,22:40,inbound,RDUA,PIEA
+FL,South Florida,Station,338,LALA,Stephanie Stewart,Truck,99FG,4/26/2018,On Time,22:35,outbound,LALA,RDUA
+FL,South Florida,Station,339,FMYA,Al Rios,Truck,01HN,4/27/2018,Late by 15 minutes,22:30,inbound,RDUA,FMYA
+FL,South Florida,Station,340,FPRA,Bobbie Schwartz,Truck,02YJ,4/28/2018,Early by 20 minutes,22:25,outbound,FPRA,RDUA
+FL,South Florida,Station,385,APFA,Kristina Joseph,Truck,03UK,4/29/2018,On Time,22:20,inbound,LALA,APFA
+TN,Delta,Station,369,MQYA,Luz Jennings,Airplane,04OL,4/30/2018,Late by 24 minutes,22:15,inbound,LALA,MQYA
+TN,Delta,Station,370,BNAA,Melinda Chapman,Airplane,05GH,5/1/2018,Early by 32 minutes,22:10,outbound,BNAA,LALA
+TN,Delta,Station,380,OLVA,Lyle Brock,Airplane,06DJ,5/2/2018,Late by 6 minutes,22:05,inbound,LALA,OLVA
+TN,Delta,Station,383,MKLA,Mitchell Daniel,Airplane,07MT,5/3/2018,On Time,22:00,inbound,BNAA,MKLA
+MS,Delta,Station,388,TUPA,Olga Rodriquez,Airplane,08MU,5/4/2018,On Time,21:55,outbound,TUPA,BNAA
+MS,Delta,Station,430,CRXA,Flora Vega,Airplane,09VR,5/5/2018,Late by 12 minutes,21:50,inbound,BNAA,CRXA
+KY,Delta,Station,540,BWGA,Tammy Gordon,Truck,00DX,5/6/2018,On Time,21:45,outbound,BWGA,BNAA
+AR,Delta,Station,722,LITA,Israel Lawson,Airplane,A1234,5/7/2018,Late by 6 minutes,21:40,inbound,CRXA,LITA
+OK,Delta,Station,723,OKCA,Silvia Boyd,Truck,G564,5/8/2018,Early by 27 minutes,21:35,inbound,CRXA,OKCA
+AR,Delta,Station,724,JBRA,Donna Gardner,Airplane,T789,5/9/2018,On Time,21:30,outbound,JBRA,CRXA
