@@ -191,10 +191,12 @@ var polarAreaChart = new Chart(chart, {
 	hoverRadius: 0,
 	options: {
         legend: {
-            display:false,
+            display:true,
 			position: 'right',
-			fullWidth:false,
-			
+			responsive: false,
+			//labels: {
+			//	usePointStyle: true
+			//}
         }
 	}
 	
