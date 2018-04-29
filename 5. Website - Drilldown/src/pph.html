@@ -23,8 +23,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
 <script src="lib/jquery.min.js" type="text/javascript"></script>
 <script src="lib/jquery-ui/js/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script>
-<link rel="stylesheet" type="text/css" href="PPHStyle
-.css">
+<link rel="stylesheet" type="text/css" href="PPHStyle.css">
 <style>
 @import url(https://fonts.googleapis.com/css?family=Karla:400);
 body{
@@ -48,6 +47,9 @@ body{
 </ul>
 <ul class="nav navbar-nav navbar-right">
 </ul>
+<div class="col-md-2 navbar-right">
+<button id="drilldown1" class="btn btn-danger btn-block drilldown" data-toggle="dropdown"><span class="text" placeholder="Drill Down">Drill Down</span></button>
+</div>
 </div>
 </div>
 </nav>
@@ -62,7 +64,7 @@ body{
 </div>
 </p>
  <div class="wrapper">
- 
+
       <canvas id="myChart" width="1600" height="900"></canvas>
     </div>
 
