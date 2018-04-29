@@ -9,9 +9,7 @@
 <title>Metric Operations</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<link href="css/960.css" rel="stylesheet" media="screen" />
-<link href="../css/defaultTheme.css" rel="stylesheet" media="screen" />
-<link href="css/myTheme.css" rel="stylesheet" media="screen" />
+<link rel="stylesheet" href="themes/blue/style.css" type="text/css" id="" media="print, projection, screen" />
 <link rel="stylesheet" href="https://www.jqueryscript.net/demo/Lightweight-Drilldown-Menu-Plugin-with-jQuery-Bootstrap/css/bootstrap-drilldown-select.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 
@@ -20,6 +18,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://www.jqueryscript.net/demo/Lightweight-Drilldown-Menu-Plugin-with-jQuery-Bootstrap/js/bootstrap-drilldown-select.js"></script>
+<script type="text/javascript" src="jquery-latest.js"></script> 
+<script type="text/javascript" src="jquery.tablesorter.js"></script> 
+		<script type="text/javascript">
+		$(function() {
+			$("table").tablesorter({debug: true});
+		});
+		</script>
 <script>
 $(document).ready(function() {
 	$('#drilldown1').drilldownSelect({data: data});
@@ -28,80 +33,44 @@ $(document).ready(function() {
 var data = [
 {
 	"id": 0,
-	"name": "US Ops",
+	"name": "Scope",
 	"list": [
-	{"id": 1, "name": "Eastern",
-		"list": [
-		{"id": 5, "name": "Bostonian",
-			"list":[
-			{"id": 17, "name": "ORHA",
-				"list":[
-				{"id": 22, "name": "Reginald Cruz"},
-				]},
-			{"id": 18, "name": "BEDA",
-				"list":[
-				{"id": 23, "name": "Molly Fisher"},
-				]},
-			{"id": 19, "name": "NZWA",
-			"list":[]},
-			{"id": 20, "name": "BVYA",
-			"list":[]},
-			{"id": 21, "name": "PVDA",
-			"list":[]},
-			]},
-		{"id": 6, "name": "Big Apple",
-			"list": []},
-		{"id": 7, "name": "Central",
-			"list": []},
-		]},
-	{"id": 2, "name": "Western",
-		"list": [
-		{"id": 8, "name": "Canyon",
-			"list": [
-			
-			]},
-		{"id": 9, "name": "Mountain",
-			"list": [
-			
-			]},
-		{"id": 10, "name": "Pacific Northwest",
-			"list": [
-			
-			]},
-		]},
-	{"id": 3, "name": "Central",
-		"list": [
-		{"id": 11, "name": "Three Rivers",
-			"list": [
-			
-			]},
-		{"id": 12, "name": "Great Lakes",
-			"list": [
-			
-			]},
-		{"id": 13, "name": "Piedmont",
-			"list": [
-			
-			]},
-		]},
-	{"id": 4, "name": "Southern",
-		"list": [
-		{"id": 14, "name": "Southeast",
-			"list": [
-			
-			
-			]},
-		{"id": 15, "name": "South Florida",
-			"list": [
-			
-			]},
-		{"id": 16, "name": "Delta",
-			"list": [
-			
-			]},
-		]},
+	{"id": 0, "name": "Location"},
+	{"id": 1, "name": "Region Name"},
+	{"id": 2, "name": "District"},
+	{"id": 3, "name": "Location Name"},
 	]
 },
+{
+	"id": 1,
+	"name": "Region",
+	"list": [
+	{"id": 0, "name": "Location"},
+	{"id": 1, "name": "Region Name"},
+	{"id": 2, "name": "District"},
+	{"id": 3, "name": "Location Name"},
+	]
+},
+{
+	"id": 2,
+	"name": "District",
+	"list": [
+	{"id": 0, "name": "Location"},
+	{"id": 1, "name": "Region Name"},
+	{"id": 2, "name": "District"},
+	{"id": 3, "name": "Location Name"},
+	]
+},
+{
+	"id": 3,
+	"name": "Location",
+	"list": [
+	{"id": 0, "name": "Location"},
+	{"id": 1, "name": "Region Name"},
+	{"id": 2, "name": "District"},
+	{"id": 3, "name": "Location Name"},
+	]
+}
 ]
 </script>
 <style>
@@ -150,7 +119,7 @@ $('selector').fixedHeaderTable({ height: 1500 });
 
 
 <div class="grid_8 height250">
-<table class="fancyTable" id="myTable01" cellpadding="0" cellspacing="0">
+<table class="tablesorter" id="myTable01" border="1" >
 <thead><tr><th title="Field #1">State</th>
 <th title="Field #2">District</th>
 <th title="Field #3">Type</th>
@@ -2319,5 +2288,6 @@ $('selector').fixedHeaderTable({ height: 1500 });
 </p>
 </div>
 </div>
+
 </body>
 </html>
