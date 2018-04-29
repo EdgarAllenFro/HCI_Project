@@ -14,7 +14,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
-<script src="csv_reader.js"></script>
 
 <style>
 @import url(https://fonts.googleapis.com/css?family=Karla:400);
@@ -59,35 +58,23 @@ body{
 <div class="container">
 <div class="jumbotron">
 <h2>Location: Drilldown and Name</h2>
-<!--
+
 	<p>
 	<div class="form-group">
 	<div class="col-xs-4">
 	<label>Select Date Range:</label>
 	<input type="text" class="form-control" name="daterange" value="" />
-	<br /><label for="sel1">DEX Number:</label>
-	<select class="form-control" id="sel1">
-	<option>1</option>
-	<option>2</option>
-	<option>3</option>
-	<option>4</option>
-	</select>
-	<br /><a class="btn btn-info" href="#">DEX Types</a>
 	</div>
 	</div>
 	</p>
--->
+
 <p>
 <!--
 <div id="body" style="width:50%"> -->
 	<!-- input idea from: https://mounirmesselmeni.github.io/2012/11/20/reading-csv-file-with-javascript-and-html5-file-api/ -->
 	<!--
 	<input type="file" id="csvFileInput" onchange="handleFiles(this.files)" accept=".csv"> -->
-<<<<<<< HEAD
 	<canvas id="polarAreaChartCanvas" height='80' width='200'></canvas>
-=======
-	<canvas id="polarAreaChart" height='200' width='200'></canvas>
->>>>>>> ddc43d5d56e62e54ffdb1346f8c568b8275836fb
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 	<script src="main.js"></script>
 <!--
@@ -99,7 +86,83 @@ body{
 </div>
 <script type="text/javascript">
 $(function() {
-    $('input[name="daterange"]').daterangepicker();
+$('input[name="daterange"]').daterangepicker(
+{
+	timePicker: true,
+
+    locale: {
+      format: 'MM-DD-YYYY'
+    },
+    startDate: '03-20-2018',
+    endDate: '03-20-2018',
+	minDate: '03-20-2018',
+	maxDate: '03-21-2018'
+}, 
+
+
+function(start, end, label) {
+
+var startStr = start.format('MM-DD-YYYY');
+var endStr = end.format('MM-DD-YYYY');
+
+var s_date = new Date(startStr);
+var e_date = new Date(endStr);
+
+
+	var all_dex = [];
+	var all_labels = [];
+	var dummy_data = [];
+	var dex_count = [];
+	var labels = [];
+	var exists = 0;
+	
+
+	//only includes data in the master array that is within the date parameters
+	for(var i =0; i<json.length;i++){
+		var temp_date = new Date(json[i].Date);
+		console.log(s_date <= temp_date);
+		if((s_date <= temp_date) && (e_date >= temp_date)){
+			all_dex.push(json[i].DEX);
+			all_labels.push(json[i].Description);
+		}
+	}
+	
+	console.log(all_dex);
+	
+	for(var i=0; i <= all_dex.length; i++){
+		if(dummy_data.length == 0){
+			dummy_data.push(all_dex[i]);
+			labels.push(all_labels[i]);
+			dex_count.push(1);
+		}
+		exists = 0;
+		for(var j=0; j <= dummy_data.length; j++){
+			if(all_dex[i] == dummy_data[j]){
+				dex_count[j]++;
+				exists = 1;
+				break;
+			}
+		}
+		if(exists != 1){
+			dummy_data.push(all_dex[i]);
+			labels.push(all_labels[i]);
+			dex_count.push(1);
+		}
+
+		
+	}
+	dex_count.pop();
+
+	console.log(dummy_data);
+	console.log(dex_count);
+	 
+	polarAreaChart.data.datasets[0].data = dex_count;
+	polarAreaChart.data.labels = labels;
+	polarAreaChart.update();
+	
+
+});
+	
 });
 </script>
 </body>
