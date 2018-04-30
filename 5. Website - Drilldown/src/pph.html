@@ -29,30 +29,6 @@
 <link rel="stylesheet" type="text/css" href="PPHStyle.css">
 <script src="https://www.jqueryscript.net/demo/Lightweight-Drilldown-Menu-Plugin-with-jQuery-Bootstrap/js/bootstrap-drilldown-select.js"></script>
 <script>
-$(document).ready(function() {
-	$('#drilldown1').drilldownSelect({data: data});
-});
-var data = [
-{
-	"id": 0,
-	"name": "Division",
-	"list": [
-	{"id": "ops", "name": "US OPS"},
-	{"id": "agfs", "name": "AGFS"},
-	]
-},
-
-{
-	"id": "Senior Manager",
-	"name": "Senior Manager",
-	"list": [
-	{"id": "Bostnian", "name": "Bob"},
-	{"id": "Big Apple", "name": "Jack"},
-	]
-},
-
-	
-]
 </script>
 <style>
 @import url(https://fonts.googleapis.com/css?family=Karla:400);
@@ -67,6 +43,7 @@ body{
 </style>
 </head>
 <body>
+<div class ='wrapEverything'>
 <nav class="navbar navbar-default navbar-static-top">
 <div class="container">
 <div class="navbar-header">
@@ -79,13 +56,25 @@ body{
 <li><a href="dex.html">DEX Exception</a></li>
 <li class="active"><a href="#">Packages Per Hour</a></li>
 </ul>
+
+<!-- Copy From HERE -->
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manager<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><button type="button" id="Bob" style="width: 100%; height: 50%;" >Bob Bobbert   </button></li>
+<li><button type="button" id="Sen" style="width: 100%; height: 50%;">Sen Bimmons  </button></li>
+<li><button type="button" id="Dim" style="width: 100%; height: 50%;" >Dim Tuncan  </button></li>
+</ul>
+</li>
+</ul>
 <ul class="nav navbar-nav navbar-right">
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Location<span class="caret"></span></a>
 <ul class="dropdown-menu">
-<li><button type="button" id="ORHA" style="width: 100%; height: 30px;" >ORHA   </button></li>
-<li><button type="button" id="NYCA" style="width: 100%; height: 30px;">NYCA  </button></li>
-<li><button type="button" id="GAIA" style="width: 100%; height: 30px;" >GAIA  </button></li>
+<li><button type="button" id="ORHA" style="width: 100%; height: 50%;" >ORHA   </button></li>
+<li><button type="button" id="NYCA" style="width: 100%; height: 50%;">NYCA  </button></li>
+<li><button type="button" id="GAIA" style="width: 100%; height: 50%;" >GAIA  </button></li>
 </ul>
 </li>
 </ul>
@@ -93,9 +82,9 @@ body{
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">District<span class="caret"></span></a>
 <ul class="dropdown-menu">
-<li><button type="button" id="Bostonian" style="width: 100%; height: 30px;">Bostonian  </button></li>
-<li><button type="button" id="Big Apple" style="width: 100%; height: 30px;">Big Apple  </button></li>
-<li><button type="button" id="Capital" style="width: 100%; height: 30px;">Capital  </button></li>
+<li><button type="button" id="Bostonian" style="width: 100%; height: 50%;">Bostonian  </button></li>
+<li><button type="button" id="Big Apple" style="width: 100%; height: 50%;">Big Apple  </button></li>
+<li><button type="button" id="Capital" style="width: 100%; height: 50%;">Capital  </button></li>
 </ul>
 </li>
 </ul>
@@ -103,18 +92,19 @@ body{
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" id="RegionDrop"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Region<span class="caret"></span></a>
 <ul class="dropdown-menu">
-<li><button type="button" id="Eastern" style="width: 100%; height: 30px;">Eastern</button></li>
+<li><button type="button" id="Eastern" style="width: 100%; height: 50%;">Eastern</button></li>
 </ul>
 </li>
 </ul>
 <ul class="nav navbar-nav navbar-right" width = 50>
 <li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Division<span class="caret"></span></a>
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Div<span class="caret"></span></a>
 <ul class="dropdown-menu">
-<li><button type="button" id="Us Ops" style="width: 100%; height: 30px;">Us Ops</button></li>
+<li><button type="button" id="Us Ops" style="width: 100%; height: 50%;">Us Ops</button></li>
 </ul>
 </li>
 </ul>
+<!-- To HERE -->
 </div>
 </div>
 </nav>
@@ -501,5 +491,6 @@ labels.push(Capital21[i].Time);
 	
 });
 </script>
+</div>
 </body>
 </html>

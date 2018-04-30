@@ -321,15 +321,10 @@ var timeStart = "0";
 
 for (var i = timeStart ; i < timeRange; i++){
 ActualData.push(Ops20[i].Actual);
-}
-
-for (var i = timeStart; i < timeRange; i++){
 ExpectedData.push(Ops20[i].Pred);
-}
-
-for (var i = timeStart; i < timeRange; i++){
 labels.push(Ops20[i].Time);
 }
+
 
 
 var data = {
@@ -359,32 +354,22 @@ var options= {
   scales: {
   
  xAxes: [
- 
- 
 				{	
-				
-				
+
                   stacked: true,
                   id: "bar-x-axis1",
                   barThickness : 26,
-				  
-                 
-				 
+
 				 ticks: {
                     autoSkip: false,
                     maxRotation: 0,
                     minRotation: 40,
 					fontSize: 14,
-					
-                   
-                    
+ 
                   }
-				  
-				  
-                  
+
                 },
-				
-				
+
                 {
            gridLines: {
                 display: false,
@@ -392,32 +377,25 @@ var options= {
               }
 		
                 }],
-                
-                
+ 
       yAxes: [{
-
-	  
-	  
 	    labels:{
 			fontSize: 32,
 		},
-		
         ticks: {
           beginAtZero: true,
 		  fontSize: 16,
-		  
-          
+
         },
-		
 		 scaleLabel: {
         display: true,
         labelString: 'Packages Recieved',
 		fontSize: 26,
-		
       },
-	  
       }]
-
+	  
+	  
+	  
   }
   
   
@@ -438,7 +416,9 @@ var ctx = document.getElementById("myChart");
 var myBarChart = new Chart(ctx, {
     type: 'bar',
     data: data,
-    options: options
+    options: options,
+	responsive: false,
+	maintainAspectRatio: false
 });
  
  //Division Button 
@@ -1226,7 +1206,305 @@ function changeChartBost2(){
 	 currentData = "Capital20";
 
 	 } 
+	 //
+ }
+	
+	document.getElementById("Bob").addEventListener("click", changeChartBost3);
+function changeChartBost3(){
+	
+	
+		document.getElementById('DrillDownHeader').innerHTML = 'Us Ops - Eastern - Bostonian - ORHA - Bob Bobbert';
+	 if (startDate == "03-20-2018" && endDate == "03-20-2018")
+	 {
+	ActualData =  [];
+	labels = [];
+	ExpectedData =  [];
+	
+	 myBarChart.data.datasets[0].data = ActualData;
+	 myBarChart.data.datasets[1].data = ExpectedData;
+	 myBarChart.data.labels = labels;
+
+	 myBarChart.update();
+	 
+	var timeRange = 24;
+	
+	for (var i = 0; i < timeRange; i++){
+	ActualData.push(Bostonian20[i].Actual);
+	ExpectedData.push(Bostonian20[i].Predicted);
+	labels.push(Bostonian20[i].Time);
+	}
+		
+	 myBarChart.data.datasets[0].data = ActualData;
+	 myBarChart.data.datasets[1].data = ExpectedData;
+	 myBarChart.data.labels = labels;
+
+	
+	 myBarChart.update();
+	 currentData = "Bostonian20";
+	 }
+	 
+	 if (startDate == "03-20-2018" && endDate == "03-21-2018")
+	 {
+		 ActualData =  [];
+	labels = [];
+	ExpectedData =  [];
+	
+	 myBarChart.data.datasets[0].data = ActualData;
+	 myBarChart.data.datasets[1].data = ExpectedData;
+	 myBarChart.data.labels = labels;
+
+	 myBarChart.update();
+	 
+	var timeRange = 24;
+	
+	for (var i = 0; i < timeRange; i++){
+	ActualData.push(Bostonian2021[i].Actual);
+	ExpectedData.push(Bostonian2021[i].Pred);
+	labels.push(Bostonian2021[i].Time);
+	}
+		
+	 myBarChart.data.datasets[0].data = ActualData;
+	 myBarChart.data.datasets[1].data = ExpectedData;
+	 myBarChart.data.labels = labels;
+
+	
+	 myBarChart.update();
+	 currentData = "Bostonian20";
+		 
+		 
+	 }
+	 
+	 if (startDate == "03-21-2018" && endDate == "03-21-2018")
+	 {
+	ActualData =  [];
+	labels = [];
+	ExpectedData =  [];
+	
+	 myBarChart.data.datasets[0].data = ActualData;
+	 myBarChart.data.datasets[1].data = ExpectedData;
+	 myBarChart.data.labels = labels;
+
+	 myBarChart.update();
+	 
+	var timeRange = 24;
+	
+	for (var i = 0; i < timeRange; i++){
+	ActualData.push(Bostonian21[i].Actual);
+	ExpectedData.push(Bostonian21[i].Predicted);
+	labels.push(Bostonian21[i].Time);
+	}
+		
+	 myBarChart.data.datasets[0].data = ActualData;
+	 myBarChart.data.datasets[1].data = ExpectedData;
+	 myBarChart.data.labels = labels;
+
+	
+	 myBarChart.update();
+	 currentData = "Bostonian20";
+
+	 } 
+	 
+
+
+
+
+}	 
+	 
+	 
+ document.getElementById("Sen").addEventListener("click", changeChartBig3);
+ function changeChartBig3(){
+	
+	document.getElementById('DrillDownHeader').innerHTML = 'Us Ops - Eastern - Big Apple - NYCA - Sen Bimmons';
+	
+	 if (startDate == "03-20-2018" && endDate == "03-20-2018")
+	 {
+	ActualData =  [];
+	labels = [];
+	ExpectedData =  [];
+	
+	 myBarChart.data.datasets[0].data = ActualData;
+	 myBarChart.data.datasets[1].data = ExpectedData;
+	 myBarChart.data.labels = labels;
+
+	 myBarChart.update();
+	 
+	var timeRange = 24;
+	
+	for (var i = 0; i < timeRange; i++){
+	ActualData.push(BigApple20[i].Actual);
+	ExpectedData.push(BigApple20[i].Predicted);
+	labels.push(BigApple20[i].Time);
+	}
+		
+	 myBarChart.data.datasets[0].data = ActualData;
+	 myBarChart.data.datasets[1].data = ExpectedData;
+	 myBarChart.data.labels = labels;
+
+	
+	 myBarChart.update();
+	 currentData = "BigApple20";
+	 }
+	 
+	 if (startDate == "03-20-2018" && endDate == "03-21-2018")
+	 {
+		 ActualData =  [];
+	labels = [];
+	ExpectedData =  [];
+	
+	 myBarChart.data.datasets[0].data = ActualData;
+	 myBarChart.data.datasets[1].data = ExpectedData;
+	 myBarChart.data.labels = labels;
+
+	 myBarChart.update();
+	 
+	var timeRange = 24;
+	
+	for (var i = 0; i < timeRange; i++){
+	ActualData.push(BigApple2021[i].Actual);
+	ExpectedData.push(BigApple2021[i].Pred);
+	labels.push(BigApple2021[i].Time);
+	}
+		
+	 myBarChart.data.datasets[0].data = ActualData;
+	 myBarChart.data.datasets[1].data = ExpectedData;
+	 myBarChart.data.labels = labels;
+
+	
+	 myBarChart.update();
+	 currentData = "BigApple20";
+		 
+		 
+	 }
+	 
+	 if (startDate == "03-21-2018" && endDate == "03-21-2018")
+	 {
+	ActualData =  [];
+	labels = [];
+	ExpectedData =  [];
+	
+	 myBarChart.data.datasets[0].data = ActualData;
+	 myBarChart.data.datasets[1].data = ExpectedData;
+	 myBarChart.data.labels = labels;
+
+	 myBarChart.update();
+	 
+	var timeRange = 24;
+	
+	for (var i = 0; i < timeRange; i++){
+	ActualData.push(BigApple21[i].Actual);
+	ExpectedData.push(BigApple21[i].Predicted);
+	labels.push(BigApple21[i].Time);
+	}
+		
+	 myBarChart.data.datasets[0].data = ActualData;
+	 myBarChart.data.datasets[1].data = ExpectedData;
+	 myBarChart.data.labels = labels;
+
+	
+	 myBarChart.update();
+	 currentData = "BigApple20";
+
+	 } 
 }
+
+
+ document.getElementById("Dim").addEventListener("click", changeChartCap3); 
+ function changeChartCap3(){
+	
+	document.getElementById('DrillDownHeader').innerHTML = 'Us Ops - Eastern - Capital - GAIA - Dim Tuncan';
+	
+	 if (startDate == "03-20-2018" && endDate == "03-20-2018")
+	 {
+	ActualData =  [];
+	labels = [];
+	ExpectedData =  [];
+	
+	 myBarChart.data.datasets[0].data = ActualData;
+	 myBarChart.data.datasets[1].data = ExpectedData;
+	 myBarChart.data.labels = labels;
+
+	 myBarChart.update();
+	 
+	var timeRange = 24;
+	
+	for (var i = 0; i < timeRange; i++){
+	ActualData.push(Capital20[i].Actual);
+	ExpectedData.push(Capital20[i].Predicted);
+	labels.push(Capital20[i].Time);
+	}
+		
+	 myBarChart.data.datasets[0].data = ActualData;
+	 myBarChart.data.datasets[1].data = ExpectedData;
+	 myBarChart.data.labels = labels;
+
+	
+	 myBarChart.update();
+	 currentData = "Capital20";
+	 }
+	 
+	 if (startDate == "03-20-2018" && endDate == "03-21-2018")
+	 {
+		 ActualData =  [];
+	labels = [];
+	ExpectedData =  [];
+	
+	 myBarChart.data.datasets[0].data = ActualData;
+	 myBarChart.data.datasets[1].data = ExpectedData;
+	 myBarChart.data.labels = labels;
+
+	 myBarChart.update();
+	 
+	var timeRange = 24;
+	
+	for (var i = 0; i < timeRange; i++){
+	ActualData.push(Capital2021[i].Actual);
+	ExpectedData.push(Capital2021[i].Pred);
+	labels.push(Capital2021[i].Time);
+	}
+		
+	 myBarChart.data.datasets[0].data = ActualData;
+	 myBarChart.data.datasets[1].data = ExpectedData;
+	 myBarChart.data.labels = labels;
+
+	
+	 myBarChart.update();
+	 currentData = "Capital20";
+		 
+		 
+	 }
+	 
+	 if (startDate == "03-21-2018" && endDate == "03-21-2018")
+	 {
+	ActualData =  [];
+	labels = [];
+	ExpectedData =  [];
+	
+	 myBarChart.data.datasets[0].data = ActualData;
+	 myBarChart.data.datasets[1].data = ExpectedData;
+	 myBarChart.data.labels = labels;
+
+	 myBarChart.update();
+	 
+	var timeRange = 24;
+	
+	for (var i = 0; i < timeRange; i++){
+	ActualData.push(Capital21[i].Actual);
+	ExpectedData.push(Capital21[i].Predicted);
+	labels.push(Capital21[i].Time);
+	}
+		
+	 myBarChart.data.datasets[0].data = ActualData;
+	 myBarChart.data.datasets[1].data = ExpectedData;
+	 myBarChart.data.labels = labels;
+
+	
+	 myBarChart.update();
+	 currentData = "Capital20";
+
+	 } 
+	 
+ }
+ 
 
 
 
