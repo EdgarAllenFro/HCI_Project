@@ -19,8 +19,12 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://www.jqueryscript.net/demo/Lightweight-Drilldown-Menu-Plugin-with-jQuery-Bootstrap/js/bootstrap-drilldown-select.js"></script>
 
-
-
+<script type="text/javascript" src="jquery.tablesorter.js"></script> 
+		<script type="text/javascript">
+		$(function() {
+			$("table").tablesorter({debug: true});
+		});
+		</script>
 <style>
 @import url(https://fonts.googleapis.com/css?family=Karla:400);
 body{
@@ -97,7 +101,7 @@ zoom: 110%;
 </nav>
 <div class="container">
 <div class="jumbotron">
-<h2>Location: Drilldown and Name</h2>
+<p>Current Level:<b id='DrillDownHeader'>Us Ops</b> </p> 
 <p>
 <div class ="wrapper"
 
