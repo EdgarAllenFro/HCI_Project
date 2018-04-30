@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Metric Operations</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="themes/blue/style.css" type="text/css" id="" media="print, projection, screen" />
+<link rel="stylesheet" href="https://www.jqueryscript.net/demo/Lightweight-Drilldown-Menu-Plugin-with-jQuery-Bootstrap/css/bootstrap-drilldown-select.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+<script src="../jquery.fixedheadertable.js"></script>
+<script src="demo.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://www.jqueryscript.net/demo/Lightweight-Drilldown-Menu-Plugin-with-jQuery-Bootstrap/js/bootstrap-drilldown-select.js"></script>
+
+<script type="text/javascript" src="jquery.tablesorter.js"></script> 
+		<script type="text/javascript">
+		$(function() {
+			$("table").tablesorter({debug: true});
+		});
+		</script>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Karla:400);
+body{
+	font-family: Karla, sans-serif;
+zoom: 110%;
+}
+
+.drilldown {
+	vertical-align: middle;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-static-top">
+<div class="container">
+<div class="navbar-header">
+<a class="navbar-brand" href="#">Metric Operations</a>
+</div>
+<div id="navbar" class="navbar-collapse collapse">
+<ul class="nav navbar-nav navbar-middle">
+<li><a href="../index.html">Home</a></li>
+<li class="active"><a href="#">Volume Availability Status</a></li>
+<li><a href="../dex.html">DEX Exception</a></li>
+<li><a href="../pph.html">Packages Per Hour</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manager<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><button type="button" id="Reginald" style="width: 100%; height: 50%;" >Reginald Cruz   </button></li>
+<li><button type="button" id="Sen" style="width: 100%; height: 50%;">Sen Bimmons  </button></li>
+<li><button type="button" id="Dim" style="width: 100%; height: 50%;" >Dim Tuncan  </button></li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Location<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><button type="button" id="ORHA" style="width: 100%; height: 50%;" >ORHA   </button></li>
+<li><button type="button" id="NYCA" style="width: 100%; height: 50%;">NYCA  </button></li>
+<li><button type="button" id="GAIA" style="width: 100%; height: 50%;" >GAIA  </button></li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">District<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><button type="button" id="Bostonian" style="width: 100%; height: 50%;">Bostonian  </button></li>
+<li><button type="button" id="Big Apple" style="width: 100%; height: 50%;">Big Apple  </button></li>
+<li><button type="button" id="Capital" style="width: 100%; height: 50%;">Capital  </button></li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" id="RegionDrop"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Region<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><button type="button" id="Eastern" style="width: 100%; height: 50%;">Eastern</button></li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right" width = 50>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Div<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><button type="button" id="Us Ops" style="width: 100%; height: 50%;">Us Ops</button></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container">
+<div class="jumbotron">
+<p>Current Level:<b id='DrillDownHeader'>Us Ops</b> </p> 
+<p>
+<div class ="wrapper"
+
+
+$('selector').fixedHeaderTable({ width: 1500 });
+$('selector').fixedHeaderTable({ height: 1500 });
+
+
+<div class="container_12">
+
+
+<div class="grid_8 height250">
+<table class="tablesorter" id="myTable01" border="1">
+<thead><tr><th title="Field #1">State</th>
+<th title="Field #2">District</th>
+<th title="Field #3">Type</th>
+<th title="Field #4">LocNum</th>
+<th title="Field #5">Location</th>
+<th title="Field #6">Senior Manager</th>
+<th title="Field #7">Vehicle</th>
+<th title="Field #8">Identification #</th>
+<th title="Field #9">Date</th>
+<th title="Field #10">On Time Status</th>
+<th title="Field #11">Arrival Time</th>
+<th title="Field #12">In/Out</th>
+<th title="Field #13">Departing From</th>
+<th title="Field #14">Destination</th>
+</tr></thead>
+<tbody>
+
+<tr>
+<td>MA</td>
+<td>Bostonian</td>
+<td>Station</td>
+<td align="right">16</td>
+<td>ORHA</td>
+<td>Reginald Cruz</td>
+<td><img src="images/plane.png" style="height:50px;width:50px" /></td>
+<td>2WSX</td>
+<td>3/20/2018</td>
+<td><img src="images/downArrow.png" style="height:50px" />
+<td>0:20</td>
+<td>outbound</td>
+<td>ORHA</td>
+<td>BEDA</td>
+</tr>
+<tr>
+<td>MA</td>
+<td>Bostonian</td>
+<td>Station</td>
+<td align="right">16</td>
+<td>ORHA</td>
+<td>Reginald Cruz</td>
+<td><img src="images/plane.png" style="height:50px;width:50px" /></td>
+<td>3EDC</td>
+<td>3/20/2018</td>
+<td><img src="images/upArrow.png" style="height:50px" />
+<td>0:25</td>
+<td>outbound</td>
+<td>ORHA</td>
+<td>BEDA</td>
+</tr>
+<tr>
+<td>MA</td>
+<td>Bostonian</td>
+<td>Station</td>
+<td align="right">16</td>
+<td>ORHA</td>
+<td>Reginald Cruz</td>
+<td><img src="images/truck.png" style="width:50px" /></td>
+<td>4RFV</td>
+<td>3/20/2018</td>
+<td><img src="images/checkmark.png" style="width:50px" /></td>
+<td>0:30</td>
+<td>inbound</td>
+<td>BEDA</td>
+<td>ORHA</td>
+</tr>
+<tr>
+<td>MA</td>
+<td>Bostonian</td>
+<td>Station</td>
+<td align="right">16</td>
+<td>ORHA</td>
+<td>Reginald Cruz</td>
+<td><img src="images/truck.png" style="width:50px" /></td>
+<td>5TGB</td>
+<td>3/20/2018</td>
+<td><img src="images/downArrow.png" style="height:50px" />
+<td>0:35</td>
+<td>outbound</td>
+<td>ORHA</td>
+<td>NZWA</td>
+</tr>
+<tr>
+<td>MA</td>
+<td>Bostonian</td>
+<td>Station</td>
+<td align="right">16</td>
+<td>ORHA</td>
+<td>Reginald Cruz</td>
+<td><img src="images/truck.png" style="width:50px" /></td>
+<td>6YHN</td>
+<td>3/20/2018</td>
+<td><img src="images/upArrow.png" style="height:50px" />
+<td>0:40</td>
+<td>outbound</td>
+<td>ORHA</td>
+<td>NZWA</td>
+</tr>
+<tr>
+<td>MA</td>
+<td>Bostonian</td>
+<td>Station</td>
+<td align="right">16</td>
+<td>ORHA</td>
+<td>Reginald Cruz</td>
+<td><img src="images/plane.png" style="height:50px;width:50px" /></td>
+<td>7UJM</td>
+<td>3/20/2018</td>
+<td><img src="images/downArrow.png" style="height:50px" />
+<td>0:45</td>
+<td>inbound</td>
+<td>NZWA</td>
+<td>ORHA</td>
+</tr>
+<tr>
+<td>MA</td>
+<td>Bostonian</td>
+<td>Station</td>
+<td align="right">16</td>
+<td>ORHA</td>
+<td>Reginald Cruz</td>
+<td><img src="images/truck.png" style="width:50px" /></td>
+<td>8IKI</td>
+<td>3/20/2018</td>
+<td><img src="images/checkmark.png" style="width:50px" /></td>
+<td>0:50</td>
+<td>outbound</td>
+<td>ORHA</td>
+<td>NZWA</td>
+</tr>
+<tr>
+<td>MA</td>
+<td>Bostonian</td>
+<td>Station</td>
+<td align="right">16</td>
+<td>ORHA</td>
+<td>Reginald Cruz</td>
+<td><img src="images/plane.png" style="height:50px;width:50px" /></td>
+<td>9OLP</td>
+<td>3/20/2018</td>
+<td><img src="images/checkmark.png" style="width:50px" /></td>
+<td>0:55</td>
+<td>inbound</td>
+<td>PSMA</td>
+<td>ORHA</td>
+</tr>
+<tr>
+<td>MA</td>
+<td>Bostonian</td>
+<td>Station</td>
+<td align="right">16</td>
+<td>ORHA</td>
+<td>Reginald Cruz</td>
+<td><img src="images/truck.png" style="width:50px" /></td>
+<td>1AQ1</td>
+<td>3/20/2018</td>
+<td><img src="images/downArrow.png" style="height:50px" />
+<td>1:00</td>
+<td>outbound</td>
+<td>ORHA</td>
+<td>PSMA</td>
+</tr>
+<tr>
+<td>MA</td>
+<td>Bostonian</td>
+<td>Station</td>
+<td align="right">16</td>
+<td>ORHA</td>
+<td>Reginald Cruz</td>
+<td><img src="images/plane.png" style="height:50px;width:50px" /></td>
+<td>2WS2</td>
+<td>3/26/2018</td>
+<td><img src="images/checkmark.png" style="width:50px" /></td>
+<td>13:00</td>
+<td>outbound</td>
+<td>ORHA</td>
+<td>PSMA</td>
+</tr>
+<tr>
+<td>MA</td>
+<td>Bostonian</td>
+<td>Station</td>
+<td align="right">16</td>
+<td>ORHA</td>
+<td>Reginald Cruz</td>
+<td><img src="images/truck.png" style="width:50px" /></td>
+<td>3ED3</td>
+<td>3/26/2018</td>
+<td><img src="images/downArrow.png" style="height:50px" />
+<td>14:00</td>
+<td>inbound</td>
+<td>WTCA</td>
+<td>ORHA</td>
+</tr>
+<tr>
+<td>MA</td>
+<td>Bostonian</td>
+<td>Station</td>
+<td align="right">16</td>
+<td>ORHA</td>
+<td>Reginald Cruz</td>
+<td><img src="images/plane.png" style="height:50px;width:50px" /></td>
+<td>4RF4</td>
+<td>3/26/2018</td>
+<td><img src="images/upArrow.png" style="height:50px" />
+<td>15:00</td>
+<td>outbound</td>
+<td>ORHA</td>
+<td>WTCA</td>
+</tr>
+<tr>
+<td>MA</td>
+<td>Bostonian</td>
+<td>Station</td>
+<td align="right">16</td>
+<td>ORHA</td>
+<td>Reginald Cruz</td>
+<td><img src="images/truck.png" style="width:50px" /></td>
+<td>5TG5</td>
+<td>3/26/2018</td>
+<td><img src="images/checkmark.png" style="width:50px" /></td>
+<td>16:00</td>
+<td>inbound</td>
+<td>WTCA</td>
+<td>ORHA</td>
+</tr>
+<tr>
+<td>MA</td>
+<td>Bostonian</td>
+<td>Station</td>
+<td align="right">16</td>
+<td>ORHA</td>
+<td>Reginald Cruz</td>
+<td><img src="images/truck.png" style="width:50px" /></td>
+<td>6YH6</td>
+<td>3/26/2018</td>
+<td><img src="images/downArrow.png" style="height:50px" />
+<td>17:00</td>
+<td>inbound</td>
+<td>WTCA</td>
+<td>ORHA</td>
+</tr>
+
+
+
+</tbody></table>
+
+
+</div>
+<div class="clear"></div>
+</div>
+</p>
+</div>
+</div>
+</body>
+</html>
