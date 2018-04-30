@@ -19,98 +19,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://www.jqueryscript.net/demo/Lightweight-Drilldown-Menu-Plugin-with-jQuery-Bootstrap/js/bootstrap-drilldown-select.js"></script>
 
-<script type="text/javascript" src="jquery.tablesorter.js"></script> 
-		<script type="text/javascript">
-		$(function() {
-			$("table").tablesorter({debug: true});
-		});
-		</script>
-<script>
 
 
-$(document).ready(function() {
-	$('#drilldown1').drilldownSelect({data: data});
-});
-
-var data = [
-{
-	"id": 0,
-	"name": "US Ops",
-	"list": [
-	{"id": 1, "name": "Eastern",
-		"list": [
-		{"id": 5, "name": "Bostonian",
-			"list":[
-			{"id": 17, "name": "ORHA",
-				"list":[
-				{"id": 22, "name": "Reginald Cruz"},
-				]},
-			{"id": 18, "name": "BEDA",
-				"list":[
-				{"id": 23, "name": "Molly Fisher"},
-				]},
-			{"id": 19, "name": "NZWA",
-			"list":[]},
-			{"id": 20, "name": "BVYA",
-			"list":[]},
-			{"id": 21, "name": "PVDA",
-			"list":[]},
-			]},
-		{"id": 6, "name": "Big Apple",
-			"list": []},
-		{"id": 7, "name": "Central",
-			"list": []},
-		]},
-	{"id": 2, "name": "Western",
-		"list": [
-		{"id": 8, "name": "Canyon",
-			"list": [
-			
-			]},
-		{"id": 9, "name": "Mountain",
-			"list": [
-			
-			]},
-		{"id": 10, "name": "Pacific Northwest",
-			"list": [
-			
-			]},
-		]},
-	{"id": 3, "name": "Central",
-		"list": [
-		{"id": 11, "name": "Three Rivers",
-			"list": [
-			
-			]},
-		{"id": 12, "name": "Great Lakes",
-			"list": [
-			
-			]},
-		{"id": 13, "name": "Piedmont",
-			"list": [
-			
-			]},
-		]},
-	{"id": 4, "name": "Southern",
-		"list": [
-		{"id": 14, "name": "Southeast",
-			"list": [
-			
-			
-			]},
-		{"id": 15, "name": "South Florida",
-			"list": [
-			
-			]},
-		{"id": 16, "name": "Delta",
-			"list": [
-			
-			]},
-		]},
-	]
-},
-]
-</script>
 <style>
 @import url(https://fonts.googleapis.com/css?family=Karla:400);
 body{
@@ -136,9 +46,52 @@ zoom: 110%;
 <li><a href="../dex.html">DEX Exception</a></li>
 <li><a href="../pph.html">Packages Per Hour</a></li>
 </ul>
-<div class="col-md-2 navbar-right">
-<button id="drilldown1" class="btn btn-danger btn-block drilldown" data-toggle="dropdown"><span class="text" placeholder="Drill Down">Drill Down</span></button>
-</div>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manager<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><button type="button" id="Bob" style="width: 100%; height: 50%;" >Bob Bobbert   </button></li>
+<li><button type="button" id="Sen" style="width: 100%; height: 50%;">Sen Bimmons  </button></li>
+<li><button type="button" id="Dim" style="width: 100%; height: 50%;" >Dim Tuncan  </button></li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Location<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><button type="button" id="ORHA" style="width: 100%; height: 50%;" >ORHA   </button></li>
+<li><button type="button" id="NYCA" style="width: 100%; height: 50%;">NYCA  </button></li>
+<li><button type="button" id="GAIA" style="width: 100%; height: 50%;" >GAIA  </button></li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">District<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><button type="button" id="Bostonian" style="width: 100%; height: 50%;">Bostonian  </button></li>
+<li><button type="button" id="Big Apple" style="width: 100%; height: 50%;">Big Apple  </button></li>
+<li><button type="button" id="Capital" style="width: 100%; height: 50%;">Capital  </button></li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" id="RegionDrop"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Region<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><button type="button" id="Eastern" style="width: 100%; height: 50%;">Eastern</button></li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right" width = 50>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Div<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><button type="button" id="Us Ops" style="width: 100%; height: 50%;">Us Ops</button></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </nav>
