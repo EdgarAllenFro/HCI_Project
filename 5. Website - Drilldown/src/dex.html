@@ -40,9 +40,9 @@ body{
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manager<span class="caret"></span></a>
 <ul class="dropdown-menu">
-<li><button type="button" id="Bob" style="width: 100%; height: 50%;" >Bob Bobbert   </button></li>
-<li><button type="button" id="Sen" style="width: 100%; height: 50%;">Sen Bimmons  </button></li>
-<li><button type="button" id="Dim" style="width: 100%; height: 50%;" >Dim Tuncan  </button></li>
+<li><button type="button" id="Reginald Cruz" onclick="drilldownupdate(this);" style="width: 100%; height: 50%;" >Reginald Cruz   </button></li>
+<li><button type="button" id="Andre Hunter" onclick="drilldownupdate(this);" style="width: 100%; height: 50%;">Andre Hunter  </button></li>
+<li><button type="button" id="Leona Watson" onclick="drilldownupdate(this);" style="width: 100%; height: 50%;" >Leona Watson  </button></li>
 </ul>
 </li>
 </ul>
@@ -50,9 +50,9 @@ body{
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Location<span class="caret"></span></a>
 <ul class="dropdown-menu">
-<li><button type="button" id="ORHA" style="width: 100%; height: 50%;" >ORHA   </button></li>
-<li><button type="button" id="NYCA" style="width: 100%; height: 50%;">NYCA  </button></li>
-<li><button type="button" id="GAIA" style="width: 100%; height: 50%;" >GAIA  </button></li>
+<li><button type="button" id="ORHA" onclick="drilldownupdate(this);" style="width: 100%; height: 50%;" >ORHA   </button></li>
+<li><button type="button" id="NYCA" onclick="drilldownupdate(this);" style="width: 100%; height: 50%;">NYCA  </button></li>
+<li><button type="button" id="GAIA" onclick="drilldownupdate(this);" style="width: 100%; height: 50%;" >GAIA  </button></li>
 </ul>
 </li>
 </ul>
@@ -60,9 +60,9 @@ body{
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">District<span class="caret"></span></a>
 <ul class="dropdown-menu">
-<li><button type="button" id="Bostonian" style="width: 100%; height: 50%;">Bostonian  </button></li>
-<li><button type="button" id="Big Apple" style="width: 100%; height: 50%;">Big Apple  </button></li>
-<li><button type="button" id="Capital" style="width: 100%; height: 50%;">Capital  </button></li>
+<li><button type="button" id="Bostonian" onclick="drilldownupdate(this);" style="width: 100%; height: 50%;">Bostonian  </button></li>
+<li><button type="button" id="Big Apple" onclick="drilldownupdate(this);" style="width: 100%; height: 50%;">Big Apple  </button></li>
+<li><button type="button" id="Capital" onclick="drilldownupdate(this);" style="width: 100%; height: 50%;">Capital  </button></li>
 </ul>
 </li>
 </ul>
@@ -70,7 +70,7 @@ body{
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" id="RegionDrop"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Region<span class="caret"></span></a>
 <ul class="dropdown-menu">
-<li><button type="button" id="Eastern" style="width: 100%; height: 50%;">Eastern</button></li>
+<li><button type="button" id="Eastern" onclick="drilldownupdate(this);" style="width: 100%; height: 50%;">Eastern</button></li>
 </ul>
 </li>
 </ul>
@@ -78,7 +78,7 @@ body{
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Div<span class="caret"></span></a>
 <ul class="dropdown-menu">
-<li><button type="button" id="Us Ops" style="width: 100%; height: 50%;">Us Ops</button></li>
+<li><button type="button" id="US Ops" onclick="drilldowndivision();" style="width: 100%; height: 50%;">Us Ops</button></li>
 </ul>
 </li>
 </ul>
@@ -118,7 +118,7 @@ body{
 $(function() {
 $('input[name="daterange"]').daterangepicker(
 {
-	timePicker: true,
+	timePicker: false,
 
     locale: {
       format: 'MM-DD-YYYY'
@@ -194,6 +194,206 @@ var e_date = new Date(endStr);
 });
 	
 });
+function drilldownupdate(iden){
+		var loc_id = iden.innerText;
+		var level = 0;
+		var ddheader = "";
+		var all_dex = [];
+		var all_labels = [];
+		var dummy_data = [];
+		var dex_count = [];
+		var labels = [];
+		var exists = 0;
+		
+		
+		
+		for(var i =0; i<json.length;i++){
+			console.log(json[i].Location == loc_id);
+			console.log("ORHA"==json[i].Location);
+			console.log("US Ops"==loc_id);
+			console.log(json[i]["Division"]);
+			console.log(json[i].Region);
+			console.log(json[i].District);
+			console.log(json[i].Location);
+			console.log(json[i]["Senior Manager"]);
+			console.log(loc_id);
+			if("US Ops" == loc_id){
+				level = 1;
+				ddheader = "US Ops";
+				break;
+			} if(json[i].Region == loc_id){
+				level = 2;
+				ddheader = "US Ops";
+				ddheader += " - ";
+				ddheader += json[i].Region;
+				break;
+			} if(json[i].District == loc_id){
+				level = 3;
+				ddheader = "US Ops";
+				ddheader += " - ";
+				ddheader += json[i].Region;
+				ddheader += " - ";
+				ddheader += json[i].District;
+				break;
+			} if(json[i].Location == loc_id){
+				level = 4;
+				ddheader = "US Ops";
+				ddheader += " - ";
+				ddheader += json[i].Region;
+				ddheader += " - ";
+				ddheader += json[i].District;
+				ddheader += " - ";
+				ddheader += json[i].Location;
+				break;
+			} if(json[i]["Senior Manager"] == loc_id){
+				level = 5;
+				ddheader = "US Ops";
+				ddheader += " - ";
+				ddheader += json[i].Region;
+				ddheader += " - ";
+				ddheader += json[i].District;
+				ddheader += " - ";
+				ddheader += json[i].Location;
+				ddheader += " - ";
+				ddheader += json[i]["Senior Manager"];
+				break;
+			}
+		}
+		
+		console.log(ddheader);
+		document.getElementById('DrillDownHeader').innerHTML = ddheader;
+		
+		switch (level){
+			case 1:
+				for(var i =0; i<json.length;i++){
+					if("US Ops" == loc_id){
+						all_dex.push(json[i].DEX);
+						all_labels.push(json[i].Description);
+					}
+				}
+				break;
+				
+			case 2:
+				for(var i =0; i<json.length;i++){
+					if(json[i].Region == loc_id){
+						all_dex.push(json[i].DEX);
+						all_labels.push(json[i].Description);
+					}
+				}
+				break;
+				
+			case 3:
+				for(var i =0; i<json.length;i++){
+					if(json[i].District == loc_id){
+						all_dex.push(json[i].DEX);
+						all_labels.push(json[i].Description);
+					}
+				}
+				break;
+				
+			case 4:
+				for(var i =0; i<json.length;i++){
+					if(json[i].Location == loc_id){
+						all_dex.push(json[i].DEX);
+						all_labels.push(json[i].Description);
+					}
+				}
+				break;
+				
+			case 5:
+				for(var i =0; i<json.length;i++){
+					if(json[i]["Senior Manager"] == loc_id){
+						all_dex.push(json[i].DEX);
+						all_labels.push(json[i].Description);
+					}
+				}
+				break;
+		}
+		console.log(all_dex);
+		
+		for(var i=0; i <= all_dex.length; i++){
+			if(dummy_data.length == 0){
+				dummy_data.push(all_dex[i]);
+				labels.push(all_labels[i]);
+				dex_count.push(1);
+			}
+			exists = 0;
+			for(var j=0; j <= dummy_data.length; j++){
+				if(all_dex[i] == dummy_data[j]){
+					dex_count[j]++;
+					exists = 1;
+					break;
+				}
+			}
+			if(exists != 1){
+				dummy_data.push(all_dex[i]);
+				labels.push(all_labels[i]);
+				dex_count.push(1);
+			}
+
+			
+		}
+		dex_count.pop();
+
+		console.log(dummy_data);
+		console.log(dex_count);
+		 
+		polarAreaChart.data.datasets[0].data = dex_count;
+		polarAreaChart.data.labels = labels;
+		polarAreaChart.update();
+		
+	}
+	
+function drilldowndivision(){
+		var all_dex = [];
+		var all_labels = [];
+		var dummy_data = [];
+		var dex_count = [];
+		var labels = [];
+		var exists = 0;
+		
+
+		//only includes data in the master array that is within the date parameters
+		for(var i =0; i<json.length;i++){
+			all_dex.push(json[i].DEX);
+			all_labels.push(json[i].Description);
+		}
+		
+		console.log(all_dex);
+		
+		for(var i=0; i <= all_dex.length; i++){
+			if(dummy_data.length == 0){
+				dummy_data.push(all_dex[i]);
+				labels.push(all_labels[i]);
+				dex_count.push(1);
+			}
+			exists = 0;
+			for(var j=0; j <= dummy_data.length; j++){
+				if(all_dex[i] == dummy_data[j]){
+					dex_count[j]++;
+					exists = 1;
+					break;
+				}
+			}
+			if(exists != 1){
+				dummy_data.push(all_dex[i]);
+				labels.push(all_labels[i]);
+				dex_count.push(1);
+			}
+
+			
+		}
+		dex_count.pop();
+
+		console.log(dummy_data);
+		console.log(dex_count);
+		 
+		polarAreaChart.data.datasets[0].data = dex_count;
+		polarAreaChart.data.labels = labels;
+		polarAreaChart.update();
+	
+		document.getElementById('DrillDownHeader').innerHTML = "US Ops";
+	}
 </script>
 </body>
 </html>
